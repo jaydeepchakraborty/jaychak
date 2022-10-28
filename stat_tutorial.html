@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Jaydeep Chakraborty - Git Page</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- index CSS-->
+	<link id="theme-style" rel="stylesheet" href="assets/index.css">
+       
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+</head> 
+
+<body>
+
+    <article class="resume-wrapper text-center position-relative">
+	    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+		    <header class="resume-header pt-4 pt-md-0">
+			    <div class="row">
+				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+				        <img class="picture" src="assets/images/profile.png" alt="">
+				    </div><!--//col-->
+				    <div class="col">
+					    <div class="row p-4 justify-content-center justify-content-md-between">
+						    <div class="primary-info col-auto">
+							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Jaydeep Chakraborty</h1>
+							    <div class="title mb-3">Data Scientist | Machine Learning Enthusiast</div>
+							    <ul class="list-unstyled">
+								    <li class="mb-2">
+								    	<a class="text-link" href="mailto:jchakdeep@gmail.com">
+								    		<i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>
+								    		jchakdeep@gmail.com
+								    	</a>
+								    </li>
+								    <li>
+								    	<a class="text-link" href="#">
+								    		<i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>
+								    		(+1) 480-465-3521
+								    	</a>
+								    </li>
+								    <li>
+								    	<a class="text-link" href="#">
+								    		<i class="far fa-file fa-fw me-2" data-fa-transform="grow-3"></i>
+								    		curriculum vitae
+								    	</a>
+								    </li>
+							    </ul>
+						    </div><!--//primary-info-->
+						    <div class="secondary-info col-auto mt-2">
+							    <ul class="resume-social list-unstyled">
+					                <li class="mb-3">
+					                	<a class="text-link" href="https://www.linkedin.com/in/chakraborty-jaydeep/">
+					                		<span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span>
+					                	</a>
+					                </li>
+					                <li class="mb-3">
+					                	<a class="text-link" href="https://github.com/jaydeepchakraborty">
+					                		<span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span>
+					                	</a>
+					                </li>
+							    </ul>
+						    </div><!--//secondary-info-->
+					    </div><!--//row-->
+					    
+				    </div><!--//col-->
+			    </div><!--//row-->
+		    </header>
+
+		    <div class="resume-body p-3">
+				<ul class="nav">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="publication.html">Publication</a></li>
+				  <li><a href="projects.html">Projects</a></li>
+				  <li><a href="ml_tutorial.html">ML-Tutorials</a></li>
+				  <li><a href="stat_tutorial.html">Stat-Tutorials</a></li>
+				</ul>
+			</div>
+		    
+		    
+
+			<div class="resume-body p-5">
+				<p>
+					Hypothesis Test
+				</p>
+					<ul>
+						Q) How many Samples (Nominal)?
+					    <ul>
+					    1) 1 sample
+					    	<ul>
+					        1.1) parametric
+					        	<ul>
+					            	a) z-OneSmaple Test (known population μ, sd)
+					        	</ul>
+					        	<ul>
+					            	b) t-OneSample Test (unknown population μ, sd)
+					        	</ul>
+					        	<ul>
+					            So when we should perform the Z test and when we should perform t-Test? <br>
+					                z: We know the population variance, our sample size is large n ≥ 30 <br>
+					                t:  We do not know the population variance , our sample size is small, n < 30 <br>
+					                --> If the sample size is large enough, the sample variance is better estimate 
+					                of population variance so Z test and t-Test will conclude with the same results.
+					            </ul>
+					        </ul>
+					        <ul>
+					        1.2) non-parametric
+					        	<ul>
+					            a) WilcoxonSigned-Rank - OneSmaple Test Test
+					        	</ul>
+					        </ul>
+					    </ul>
+
+					    <ul>
+					    2) 2 samples
+					    	<ul>
+					        2.1) parametric
+					        	<ul>
+					            	a) z-TwoSample Test (known population μ, sd)
+					        	</ul>
+					        	<ul>
+					            2.1.1) non paired/ independent
+					            		<ul>
+					                    a) Independent t-TwoSample test (unknown population μ, sd)
+					                    	<ul>
+					                        	a.1) Student's t-test (both population have same variance)
+					                    	</ul>
+					                        <ul>
+					                        	a.2) Welch's t-test (both population have diff variance)
+					                    	</ul>
+					            		</ul>
+					            </ul>
+					            <ul>
+					            2.1.2) paired
+					            		<ul>
+					                    	a) paired t-TwoSample test (unknown population μ, sd)
+					                	</ul>
+					            </ul>
+					        </ul>
+					        <ul>
+					        2.2) non-parametric
+					        	<ul>
+					            2.2.1) non paired/ independent
+					            		<ul>
+					                    	a) Mann-Whitney U Test
+					                	</ul>
+					            </ul>
+					            <ul>
+					            2.2.2) paired
+					            		<ul>
+					                    	a) Wilcoxon Signed-Rank Test
+					                	</ul>
+					            </ul>
+					        </ul>
+					    </ul>
+
+					    <ul>
+					    3) more than 2 samples
+					    	<ul>
+					        3.1) one factor/ variable
+					        	<ul>
+					            3.1.1) parametric
+					            		<ul>
+					                    	a) One-way ANOVA
+					                	</ul>
+					            </ul>
+					            <ul>
+					            3.1.2) non parametric
+					            		<ul>
+					                    	a) Kruskal-Wallis Test 
+					                	</ul>
+					                	<ul>
+						                    b) Friedman Test ~ (non parametric) repeated measure one way anova. <br>
+						                    ["repeated measure" means that you have (well) repeated measure on 
+						                    the same "subject".  ~ paired. <br>
+					            
+						                    example - comparing the grades of (3 different groups) students on  <br>
+						                    3 different tests will be one way anova.But if we had for each student <br>
+						                    his score for each of the same test, then we could compare between  <br>
+						                    the test using the repeated measures taken for each student.] <br>
+						                </ul>
+					            </ul>
+					        </ul>
+					        <ul>
+					        3.2) two factor/ variable
+					        	<ul>
+					            3.2.1) parametric
+					            		<ul>
+					                    	a) Two-way ANOVA 
+					                	</ul>
+					            </ul>
+					            <ul>
+					            3.2.2) non parametric
+					        	</ul>
+					        </ul>
+					    </ul>
+
+					</ul>
+					<ul>
+				    Q) (Categorical)
+				    	<ul>
+				        	a) ChiSquare Test
+				        </ul>
+					</ul>   
+
+			</div>
+
+	    </div>
+    </article> 
+</body>
+</html> 
